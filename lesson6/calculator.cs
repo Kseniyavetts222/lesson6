@@ -55,7 +55,7 @@ namespace lesson6
                     result = number;
                 }
             }
-            return result;
+            return result;//hi kcosha
     
         }
       
