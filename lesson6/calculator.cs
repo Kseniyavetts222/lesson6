@@ -55,8 +55,42 @@ namespace lesson6
                     result = number;
                 }
             }
-            return result;//hi kcosha
-    
+            return result; //hi kcosha
+        }
+        public double Min(double[] numbers)
+        {
+            var result = 0.0;
+            foreach (var number in numbers)
+            {
+                if (result > number)
+                {
+                    result = number;
+                }
+            }
+            return result;
+
+        }
+        public double Factorial(double n)
+        {
+            double result = 1;
+            for (int i=2;i<n;i++)
+            {
+                result *= i;
+            }
+            return result;
+        }
+        public double[] SortAscending(double[] numbers)
+        {
+            double[] result = (double[])numbers.Clone();
+            Array.Sort(result);
+            return result;
+        }
+        public double[] SortDescending(double[] numbers)
+        {
+            double[] result = (double[])numbers.Clone();
+            Array.Sort(result);
+            Array.Reverse(result);
+            return result;
         }
       
     }
